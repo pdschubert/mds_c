@@ -1,0 +1,30 @@
+/**
+
+@mainpage Large Scale Multidimensional Scaling - SMACOF
+
+@author Philipp D. Schubert (E-Mail: philipp@it-schubert.com)
+
+Dieses Projekt enthält eine parallele high-performance Implementierung des
+SMACOF-Algorithmus in C(++) und CUDA C. Parameter, wie Wahl der Implementation,
+sind im Makefile vorzunehmen, mit dem das Programm anschließend nach entsprechender
+Anpassung kompiliert wird. Darüber hinaus sind die *.cu Dateien insofern anzupassen,
+dass die Anzahl an Threads und die TILE_WIDTH je nach Hardware eingestellt werden
+müssen. Die Variablen bzw. Präprozessoranweisungen sind in den ersten Zeilen der *.cu
+Dateien zu finden.
+
+Die Kompilierung des Programmes setzt eine Installation der Armadillo-Bibliothek
+vorraus. Diese kann mit dem Target 'install-armadillo' des Makefile herbeigeführt
+werden.
+
+Die hier erstellte Implementation stellt einen Kompromiss zwischen optimalen
+Speicherverbrauch und optimaler Laufzeit dar. Durch diese ist es möglich auch
+riesige Datensätze (mit weit mehr als 10000 Datenvektoren) auf Desktop-Maschinen, 
+sowie Notebooks in adäquater Zeit (wenige Minuten) durchzuführen.
+
+Die korrekte Parametrisierung des Programmes ist einem Programmaufruf ohne Parameter
+zu entnehmen.
+
+Bei der Feststellung eines Bugs, bitte ich um eine E-Mail mit entsprechender 
+Fehlerbeschreibung.
+
+*/
