@@ -31,10 +31,6 @@ CFLAGS += -Wall
 CFLAGS += -Wextra
 CFLAGS += -Ofast
 CFLAGS += -march=native
-CFLAGS += -ffunction-sections
-CFLAGS += -fdata-sections
-CFLAGS += -fuse-ld=gold
-CFLAGS += -flto=full
 CFLAGS += -fopenmp
 # flags for CUDA version
 CUFLAGS := -O3
